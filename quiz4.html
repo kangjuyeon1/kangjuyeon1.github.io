@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>심리테스트</title>
+
+    <style>
+             #menu{
+            width: 100%;
+            height: 50%;
+
+        }
+
+        .quiz {
+           background-image: url("images/star.PNG");
+           background-size: cover;
+            border: 3px solid;
+
+        }
+
+       .quiz2 {
+           background-image: url("images/department.jpg");
+           background-size: cover;
+            border: 3px solid;
+
+        }
+        .quiz3 {
+           background-image: url("images/desert.jpg");
+           background-size: cover;
+            border: 3px solid;
+
+        }
+        .quiz4 {
+           background-image: url("images/b.PNG");
+           background-size: cover;
+            border: 3px solid;
+
+        }
+        
+
+
+
+        a{
+            color:inherit;
+            text-decoration-line: node;
+
+        }
+        a:hover{
+            color:blue;
+            text-decoration-line: underline;
+        }
+
+    </style>
+
+
+<script type = "text/javascript">
+    function show_ans(id){
+        id.classList.toggle("on");
+    }
+
+</script>
+
+<style>
+.select>span{
+    display:none;
+}
+.select.on>span{
+    display: block;
+    font-size: larger;
+}
+h1{
+    background-color: lightblue;
+    border-style: solid;
+    text-align: center;
+
+}
+html,body{
+    height: 100%;
+}
+
+.container{
+    background-image: url(images/b.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+h2,span{
+    color: black;
+    text-align: center;
+    height: 100px;
+}
+
+</style>
+</head>
+
+
+<body>
+    <header>
+        <div id = "logo">
+            <h1>심리테스트 모음</h1>
+        </div>
+        
+        <nav>
+            <table id = "menu">
+                <thead>
+                <tr>
+                <th><h1><div class="quiz"><a href = "quiz.html">별</a></div></h1></th>
+                <th><h1> <div class="quiz2"><a href = "quiz2.html">백화점</a></div></h1></th>
+                <th><h1><div class="quiz3"><a href = "quiz3.html">사막</a></div></h1></th>
+                <th><h1><div class="quiz4"> <a href = "quiz4.html">벌레</a></div></h1></th>
+                </tr>
+            </thead>
+            </table>
+            </nav>
+        </header>
+
+   
+   <h1>
+        당신의 방에 갑자기 나타난 벌레, 당신의 반응은?
+   </h1>
+  
+   <div class = "container">
+    <div class = "select" onclick = "show_ans(this);">
+        <h2>1. 살충제를 뿌린다.</h2>
+      
+
+        <span>
+            싫어하는 사람이 있다면 겉으로만 친한척을 하네요.<br>
+
+            실상은 전혀 친하지 않고 너는 나쁜놈 이라는
+            
+            생각을 하고 있어요.<br>
+            
+            그래서 겉으로 보기에 사이 좋아 보이는 사람의
+            
+            뒷담화를 하기도 합니다.
+        </span>
+        </div>
+    <div class = "select" onclick = "show_ans(this);">
+         <h2>2.못본척하고 계속 뒹굴거린다.</h2>
+         <span>
+            싫어하는 사람이 있다면 그냥 무시하는 당신.<br>
+
+            그냥 싫어하는 사람을 상대하지 않아요.
+            
+            마치 투명인간을 취급하듯 옆을 지나도 모른척.<br>
+            
+            최대한 멀리하기 위해 노력합니다.
+         
+         </span>
+        </div>
+    <div class = "select" onclick = "show_ans(this);">
+        <h2>3. 크게 소리지르며 놀란다.</h2>
+        <span>
+            싫어하는 감정을 숨기지 못하는 당신.<br>
+
+상대방을 싫어하는 마음이 그대로 드러나네요.<br>
+
+평소 상대방을 드러내놓고 험담하기도 해요.<br>
+
+당신이 싫어하는 사람이 당신을 공격하면
+
+크게 화를 내기도 합니다.
+
+
+
+        </span>
+    </div>
+    <div class = "select" onclick = "show_ans(this);">
+     <h2>4. 벌레를 때려잡는다.</h2>
+     <span>싫어하는 사람이 있다면 당신은 노골적으로 티를 냅니다.<br>
+
+        싫어하는 감정을 노골적으로 드러내며
+        
+        상대방을 공격하기도 하는 당신.<br>
+        
+        상대방이 당황하는 것을 보고 비웃기도 해요
+       
+     </span>
+    </div>
+
+</div>
+
+
+</body>
+</html>

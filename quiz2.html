@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>심리테스트</title>
+
+    <style>
+              #menu{
+            width: 100%;
+            height: 50%;
+
+        }
+
+        .quiz {
+           background-image: url("images/star.PNG");
+           background-size: cover;
+            border: 3px solid;
+
+        }
+
+       .quiz2 {
+           background-image: url("images/department.jpg");
+           background-size: cover;
+            border: 3px solid;
+
+        }
+        .quiz3 {
+           background-image: url("images/desert.jpg");
+           background-size: cover;
+            border: 3px solid;
+
+        }
+        .quiz4 {
+           background-image: url("images/b.PNG");
+           background-size: cover;
+            border: 3px solid;
+
+        }
+        
+
+
+
+        a{
+            color:inherit;
+            text-decoration-line: node;
+
+        }
+        a:hover{
+            color:blue;
+            text-decoration-line: underline;
+        }
+
+    </style>
+
+
+<script type = "text/javascript">
+    function show_ans(id){
+        id.classList.toggle("on");
+    }
+
+</script>
+
+<style>
+.select>span{
+    display:none;
+}
+.select.on>span{
+    display: block;
+    font-size: larger;
+}
+h1{
+    background-color: lightsalmon;
+    border-style: solid;
+    text-align: center;
+
+}
+html,body{
+    height: 100%;
+}
+
+.container{
+    background-image: url(images/department.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+h2{
+    color: black;
+    text-align: center;
+    height: 100px;
+}
+span{
+    color: white;
+    text-align: center;
+    height: 100px;
+}
+
+</style>
+</head>
+
+
+<body>
+    <header>
+        <div id = "logo">
+            <h1>심리테스트 모음</h1>
+        </div>
+        </header>
+        <nav>
+            <table id = "menu">
+                <thead>
+                <tr>
+                <th><h1><div class="quiz"><a href = "quiz.html">별</a></div></h1></th>
+                <th><h1> <div class="quiz2"><a href = "quiz2.html">백화점</a></div></h1></th>
+                <th><h1><div class="quiz3"><a href = "quiz3.html">사막</a></div></h1></th>
+                <th><h1><div class="quiz4"> <a href = "quiz4.html">벌레</a></div></h1></th>
+                </tr>
+            </thead>
+            </table>
+            </nav>
+        </header>
+
+   
+   <h1>
+    백화점에서의 일이다. 어, 저 많은 사람들이 뭐 하고 있는거지?; <br>가까이 가보니 TV에서도 많이 광고하는 만능 칼 시범 판매였다.<br> 실제로 보니 관중들도 납득이 갈 만큼 훌륭한 솜씨를 보였다. <br>그럼 과연 칼은 얼마나 팔렸을까요?
+   </h1>
+  
+   <div class = "container">
+    <div class = "select" onclick = "show_ans(this);">
+        <h2>1. 관중들은 큰 박수를 보냈지만 하나도 안 팔렸다.</h2>
+        <span>냉정한 사람.<br>
+            모두가 들떠 있을 때 찬물을 끼얹는 듯한 말을 한 적은 없는지? 그러면서도 끝까지 앉아 있는 엉덩이가 무거운 사람. <br>익살스럽게 대처하면 꽤 재미있는 사람으로 인정받을 수 있겠지만, 귀찮은 존재로 받아들여지기 쉬우므로 주의하시길 바랍니다.
+
+        </span>
+        </div>
+    <div class = "select" onclick = "show_ans(this);">
+         <h2>2. 2~3명의 사람이 실제로 사갔다..</h2>
+         <span>평범한 타입.<br>
+            당신의 적극성은 보통. <br>균형감을 잃지 않고 꾸준히 자기 방식대로 생활하고 있는 당신은 적극적인 사람과도 냉정한 사람과도 친하게 지낼 수 있는 타입입니다.
+
+         </span>
+        </div>
+    <div class = "select" onclick = "show_ans(this);">
+        <h2>5~6개 팔렸다 !!</h2>
+        <span>활동파.<br>. 모임이나 미팅, 이벤트의 계획을 당신에게 맡긴다면 실패란 없습니다.<br> 사실 당신은 그렇게 어려운 상대가 아니기 때문에 원하지 않는데도 그런 일들을 자꾸 강요당할지도 모릅니다.
+        </span>
+    </div>
+    <div class = "select" onclick = "show_ans(this);">
+     <h2>4. 눈 깜짝할 새, 전부 다 팔렸다!!</h2>
+     <span>과민파.<br> 아침에 일어나자마자 일을 척척 해나가는 타입으로 눈이 핑핑 돌 정도로 일을 해대는 사람.<br> 조심하지 않으면 주위 사람들까지 끌어들이게 되어 ‘피곤한 사람’이라는 말을 들을지도 모릅니다.
+     </span>
+    </div>
+
+</div>
+
+
+</body>
+</html>

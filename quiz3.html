@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>심리테스트</title>
+
+    <style>
+               #menu{
+            width: 100%;
+            height: 50%;
+
+        }
+
+        .quiz {
+           background-image: url("images/star.PNG");
+           background-size: cover;
+            border: 3px solid;
+
+        }
+
+       .quiz2 {
+           background-image: url("images/department.jpg");
+           background-size: cover;
+            border: 3px solid;
+
+        }
+        .quiz3 {
+           background-image: url("images/desert.jpg");
+           background-size: cover;
+            border: 3px solid;
+
+        }
+        .quiz4 {
+           background-image: url("images/b.PNG");
+           background-size: cover;
+            border: 3px solid;
+
+        }
+        
+
+
+
+        a{
+            color:inherit;
+            text-decoration-line: node;
+
+        }
+        a:hover{
+            color:blue;
+            text-decoration-line: underline;
+        }
+
+    </style>
+
+
+<script type = "text/javascript">
+    function show_ans(id){
+        id.classList.toggle("on");
+    }
+
+</script>
+
+<style>
+.select>span{
+    display:none;
+}
+.select.on>span{
+    display: block;
+    font-size: larger;
+}
+h1{
+    background-color: burlywood;
+    border-style: solid;
+    text-align: center;
+}
+html,body{
+    height: 100%;
+}
+
+.container{
+    background-image: url(images/desert.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+h2,span{
+    color: black;
+    text-align: center;
+    height: 100px;
+}
+
+</style>
+</head>
+
+
+<body>
+    <header>
+        <div id = "logo">
+            <h1>심리테스트 모음</h1>
+        </div>
+        </header>
+        <nav>
+            <table id = "menu">
+                <thead>
+                <tr>
+                <th><h1><div class="quiz"><a href = "quiz.html">별</a></div></h1></th>
+                <th><h1> <div class="quiz2"><a href = "quiz2.html">백화점</a></div></h1></th>
+                <th><h1><div class="quiz3"><a href = "quiz3.html">사막</a></div></h1></th>
+                <th><h1><div class="quiz4"> <a href = "quiz4.html">벌레</a></div></h1></th>
+                </tr>
+            </thead>
+            </table>
+            </nav>
+        </header>
+
+   
+   <h1>
+        당신은 사막 여행을 가게 되었습니다<br>
+        그런데 사막으로 여행을 가면 걱정되는게 한 두개가 아닌데요.<br>
+        이때 가장 걱정되는 것은 무엇인가요?
+   </h1>
+  
+   <div class = "container">
+    <div class = "select" onclick = "show_ans(this);">
+        <h2>1. 물이나 음료수가 부족하지 않을까???</h2>
+        <span>당신은 그와의 사랑에 매너리즘에 빠져 금새 식어버리는 사랑이 되지는 않을까? 두근거림이 사라지지는 않을까? 하면서 항상 걱정하고 계시군요.<br>
+
+            두사람의 관계가 언제나 새롭고 신선하길 원하는데요. <br>사랑은 서로 노력하는것이니 그런 걱정보다는 서로 노력해서 예쁜 사랑 맞춰나가는게 중요하겠죠.
+            
+        
+        </span>
+        </div>
+    <div class = "select" onclick = "show_ans(this);">
+         <h2>2. 전갈이나 독사가 공격하지 않을까?</h2>
+         <span>당신은 근심을 사서 하는 스타일이시네요.<br>
+
+            어쩌면 너무 예민한 탓에 그에 대한 염려가 아주 강한것 같군요. <br>그가 한눈팔지 않을까? 다른사람이 그를 데리고 가버리진 않을까? 하면서 늘 고민하는 당신.<br> 당신의 지나친 염려는 집착으로 연결되어 상대방에게 피곤함을 줄수있으니 상대방을 믿어주는 신뢰감이 형성되어야겠네요. 상대를 좀만 더 믿어주세요.
+            
+         </span>
+        </div>
+    <div class = "select" onclick = "show_ans(this);">
+        <h2>3. 목적지까지 갈 수 있을까?</h2>
+        <span>당신은 두사람의 비중을 성격문제에 두는군요.<br>
+
+            만남이 계속되고 그와의 차이가 조금씩 느껴지면서 무척이나 오래 고민하는 스타일이시군요.<br> 서로에게 안맞는 성격으로 나에게 맞춰달라고 할게 아니라 ,그 상대방의 원래 성격을 존중해주면서 서로의 사랑을 키워나가는게 중요합니다.
+            
+        </span>
+    </div>
+    <div class = "select" onclick = "show_ans(this);">
+     <h2>4. 도둑이나 강도를 만나면 어떻게하지?</h2>
+     <span>당신은 지나치게 주위사람을 의식하는 스타일입니다.<br>
+
+        다른사람이 내 애인을 어떻게 생각할까? 그와 사귀는걸 반대하면 어떻하지? 나를 또 어떻게 생각할까? 하며 항상 노심초사 걱정하는 스타일입니다. <br>주위사람들의 시선에 따라 행동할것이 아니라 자신의 주관과 자신감으로 예쁜 사랑을 키워나가는 자신감이 필요합니다.
+        
+     </span>
+    </div>
+
+</div>
+
+
+</body>
+</html>
