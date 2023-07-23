@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    outline:0;
+}
+
+body{
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #b1e1e2;
+}
+
+section{
+    width:1000px;
+    height:400px;
+    position:absolute;
+    /*시작점 기준으로 위치 잡기?*/
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -70%);/*왜 굳이 쓰는걸까?*/
+}
+
+h1{
+    width:1000px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, 150%);
+    font: 92px/1 "Poiret one";
+    color:#fff;
+    text-align: center;
+
+}
+
+section.sky{
+    position:absolute;
+    width:100%;
+    height: 100%;
+}
+
+section .sky .sun{
+    position:absolute;
+    top:-100px;
+    left:50%;
+    margin-left:-100px;
+    transform-origin : center 500px;/*태양의 중심축을 아래쪽으로 500만큼 이동*/
+}
+
+section .sky .cloud1{
+    position: absolute;
+    top:-30px;
+    left:10%;
+}
+
+section .sky .cloud2{
+    position:absolute;
+    top:20px;
+    left:0%;
+}
+
+section .town .circle{
+    position:absolute;
+    bottom:104px;
+    left:50%;
+    margin-left:-165px;
+    opacity: 0.7;
+}
+
+section .town .day{
+    position: absolute;
+    bottom:0px;
+    left:40px;
+}
+
+section .town .night{
+    position: absolute;/*absolute라서 겹쳐짐*/
+    bottom:0px;
+    left:40px;
+}
+
+section .people{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+
+section .people .man{
+    position:absolute;
+    left:0%;
+    bottom:0px;
+}
+
+section .people .family{
+    position:absolute;
+    left:0%;
+    bottom:0px;
+}
+
+/*
+애니메이션 할 것
+1. 놀이기구 회전
+2. 하늘 배경색
+3. 마을 건물을 빛이 반사되는 이미지로 변경
+4. 구름과 태양의 움직임
+5. 산책하는 사람들의 모션
+*/
+
+/*놀이기구 회전*/
+@keyframes rotation{
+    0%{transform:rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+/*하늘색 배경을 변경*/
+@keyframes sky{
+    0%{background-color: #b08fcc;}
+    25%{background-color: #b1e1e2;}
+    50%{background-color:#fcd2e2}
+    75%{background-color: #636888;}
+    100%{background-color: #b08fcc;}
+}
+
+/*태양 회전*/
+@keyframes sun{
+    0%{opacity: 0; transform: rotate(-90deg);}
+    25%{opacity: 1; transform: rotate(-30deg);}
+    50%{opacity: 1; transform: rotate(30deg);}
+    75%{opacity: 0; transform: rotate(90deg);}
+    100%{opacity: 0; transform: rotate(-90deg);}
+}
+
+/*밤에 특정 요소를 숨김*/
+@keyframes day{
+    0%{opacity: 0;}
+    25%{opacity: 1;}
+    50%{opacity: 1;}
+    75%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
+/*사람과 구름을 오른쪽으로 이동*/
+@keyframes flow{
+    0%{left:0%; opacity: 0;}
+    10%{opacity: 1;}
+    80%{opacity: 1;}
+    100%{left:90%; opacity: 0;}
+}
+
+body{
+    animation:sky linear 20s infinite;
+}
+
+h1{
+    animation: day linear 20s infinite;
+}
+
+section .sky .sun{
+    animation: sun linear 20s infinite;
+}
+
+section .sky .cloud1{
+    animation: flow linear 10s infinite;
+}
+
+section .sky .cloud2{
+    animation: flow linear 20s infinite;
+}
+
+section .town .day{
+    animation: day linear 20s infinite;
+}
+
+section .town .circle{
+    animation: rotation linear 20s infinite;
+}
+
+section .people{
+    animation : day linear 20s infinite;
+}
+
+section .people .man{
+    animation : flow linear 7s infinite;
+}
+
+section .people .family{
+    animation : flow linear 20s infinite;
+}

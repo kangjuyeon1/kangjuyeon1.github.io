@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+ul,ol{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+body{
+	text-align: center;
+}
+
+section{
+	/*section안의 요소를 만드는 거구나 section자체의 위치를 바꾸는 거랑 별개.*/
+	width: 340px;
+	padding: 30px;/*패딩은 요소내부.*/
+	background-color: #fff;
+	margin: 50px auto;/*위아래, 좌우*/
+	box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+	border-radius: 10px;
+}
+
+
+
+section article.profile img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	display : block;/*이미지는 인라인 요소*/
+	margin : 0px auto;
+	margin-bottom: 20px;
+}
+
+section article.profile h1{
+	font-weight: bold;
+	font-size: 22px;
+	font-family: "arial";
+	line-height: 1;
+	color: #555;
+	margin-bottom: 5px;
+}
+
+section article.profile h2{
+	font-weight: normal;
+	font-family: 'arial';
+	color:#bbb;
+	margin-bottom: 30px;
+}
+
+section a.btnView{
+	display: block;
+	width:180px;
+	height:32px;
+	background-color: #444;
+	margin: 0px auto 20px;
+	border-radius: 16px;
+	font-weight: bold;
+	color:#fff;
+	font-size: 10px;
+	font-family: "arial";
+	line-height: 32px;
+	text-align: center;
+	
+}
+
+/*색상값은 어디서 확인할 수 있을까?*/
+
+ul.contact{
+	margin-bottom: 25px;
+}
+
+ul.contact li{
+	width:100%;
+	padding:10px 0px;
+	border-bottom: 1px solid #eee;
+}
+
+ul.contact li:last-child{
+	border-bottom:none;
+}
+
+.contact li span{
+	font-weight: normal;
+	font-size: 11px;
+	font-family: "orbitron";
+	color:#555;
+	letter-spacing: 1px;
+}
+
+section nav.others{
+	width: 100%;
+	text-align: center;
+}
+
+section nav.others a{
+	display: inline-block;/*수평으로 쌓으면서도 가로 폭과 세로 크기를 지정할 수 있게 해줌*/
+	width:30px;
+	height: 30px;
+	border-radius: 50%;
+	margin:0px 10px;
+	opacity: 0.4;
+	filter:saturate(0.7);
+}
+
+
+
+.others a:nth-of-type(1){
+	background-color: #35e0f7;
+	box-shadow: 5px 5px 10px rgba(74, 255, 255, 0.7);
+}
+.others a:nth-of-type(2){
+	background-color: #55f5cd;
+	box-shadow: 5px 5px 10px rgba(85, 245, 178, 0.7);
+}
+.others a:nth-of-type(3){
+	background-color: #ff80df;
+	box-shadow: 5px 5px 10px rgba(255, 128, 223, 0.7);
+}
+
+.others a:nth-of-type(4){
+	background-color: #a794fd;
+	box-shadow: 5px 5px 10px rgba(167, 148, 253, 0.7);
+}
+
+section nav.others a.on{
+	opacity: 1;
+	filter:saturate(1);
+}
+
+/*1*/
+body.member1{
+	background-color: #ebfaff;	
+}
+
+body.member1 section article.profile img{
+	box-shadow: 5px 15px 30px rgba(173, 216, 230, 0.8);
+}
+
+body.member1 section a.btnView{
+	background: linear-gradient(45deg, #4affff, #35e0f7);
+	box-shadow: 5px 10px 20px rgba(0,255, 255, 0.493);
+}
+
+
+/*2*/
+body.member2{
+	background-color: #edffeb;	
+}
+
+body.member2 section article.profile img{
+	box-shadow: 5px 15px 20px #bdccb783;
+}
+
+body.member2 section a.btnView{
+	background: linear-gradient(45deg, #a0ff9d, #55f5b2);
+	box-shadow: 5px 10px 20px rgba(33,250, 105, 0.3);
+}
+
+
+/*3*/
+body.member3{
+	background-color: #fff3fd;	
+}
+
+body.member3 section article.profile img{
+	box-shadow: 5px 15px 20px rgba(252, 99, 214, 0.2);
+}
+
+body.member3 section a.btnView{
+	background: linear-gradient(45deg, #ef74ff, #ff11c4);
+	box-shadow: 5px 10px 20px rgba(255,17, 196, 0.357);
+}
+
+
+
+/*4*/
+body.member4{
+	background-color: #f5f0ff;	
+}
+
+body.member4 section article.profile img{
+	box-shadow: 5px 15px 20px rgba(183, 82, 250, 0.2);
+}
+
+body.member4 section a.btnView{
+	background: linear-gradient(45deg, #8e74ff, #a011ff);
+	box-shadow: 5px 10px 20px rgba(160,17, 255, 0.4);
+}
